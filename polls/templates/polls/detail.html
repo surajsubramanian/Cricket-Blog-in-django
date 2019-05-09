@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/main.css' %}"
+    />
+
+    {% if title %}
+    <title>Crictics - {{ title }}</title>
+    {% else %}
+    <title>Crictics</title>
+    {% endif %}
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Crictics</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggle"
+            aria-controls="navbarToggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'blog-about' %}"
+                >About</a
+              >
+              <a class="nav-item nav-link" href="{% url 'blog-ipl' %}">IPL</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              {% if user.is_authenticated %}
+              <a class="nav-item nav-link" href="{% url 'post-create' %}"
+                >New Post</a
+              >
+              <a class="nav-item nav-link" href="{% url 'profile' %}"
+                >Profile</a
+              >
+              <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+              {% else %}
+              <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+              <a class="nav-item nav-link" href="{% url 'register' %}"
+                >Register</a
+              >
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- start of main code -->
+    <main role="main" class="container" style="margin-left: 330px">
+      <h1>{{ question.question_text }}</h1>
+      <br />
+      <h3>VOTE FOR YOUR FAVOURITE TEAM</h3>
+      <br />
+
+      {% if error_message %}
+      <p>
+        <strong>{{ error_message }}</strong>
+      </p>
+      {% endif %}
+
+      <form action="{% url 'polls:vote' question.id %}" method="post">
+        {% csrf_token %} {% for choice in question.choice_set.all %}
+        <input
+          type="radio"
+          name="choice"
+          id="choice{{ forloop.counter }}"
+          value="{{ choice.id }}"
+        />
+        <label for="choice{{ forloop.counter }}">
+          <p style="color: black; font-size: 28px">
+            {{ choice.choice_text }}
+          </p> </label
+        ><br />
+        <hr>
+        {% endfor %}
+
+        <button
+          type="submit"
+          style="background-color: lightgreen;
+        border: none;
+        color: black;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;"
+        >
+          Vote
+        </button>
+      </form>
+    </main>
+    <!-- end of main code -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

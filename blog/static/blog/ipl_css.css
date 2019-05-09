@@ -1,0 +1,150 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.nav navbar-nav ml-auto1{
+    float: left;
+    display: block;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+.image_container{
+	overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+	height: 50%;
+}
+
+.unit-image-wrapper{
+    position: relative;
+    height: 323px;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    top: auto;
+    bottom: 0;
+}
+.hero_section {
+height: 101vh;
+width: 100%;
+left: 0;
+z-index: 3;
+display: block;
+position: relative;
+background-color: Gainsboro;
+color: white;
+}
+.div{
+    vertical-align: baseline;
+}
+
+.navbar navbar-light bg-light navbar-expand-lg.collapse navbar-collapse{
+    background-color: #5f788a;
+}
+
+.navbar navbar-expand-mg navbar-dark bg-dark navbar-expand-lg{
+    position: fixed;
+}
+
+
+
+a {
+color: white;
+text-decoration: none;
+}
+
+.class_ipl{
+    background-color: #99ff66;
+    /* background-color: coral; */
+    color: white;
+}
+
+.orange_class{
+    background-color: orange;
+    color: white;
+}
+
+.purple_class{
+    background-color: purple;
+    /* #5f63bd */
+    color: white;
+}
+
+.class_most_successful{
+    background-color: #2295f3;
+    /* #0c3352 */
+    color: white;
+}
+
+.ipl_section{
+    background-color: purple;
+    /* #5f63bd */
+    color: white;
+}
+
+.class_bowler_vs_batsman{
+    background-color: #d46ebd;
+    /* background-color: gray; */
+    color: white;
+}
+
+.result_prediction{
+    background-color: #3ab79a;
+    color: white;
+}
+
+.content_of_section{
+padding-top: 100px;
+padding-bottom: 100px;
+padding-left: 50px;
+padding-right: 50px;
+
+width: 80%;
+max-width: 700px;
+margin: 0 auto;
+color: white;
+text-shadow: 0 1px 4px rgba(0,0,0,0.1);
+display: inline-block;
+vertical-align: middle;
+position: relative;
+text-align: center;
+}
+
+.writing_content{
+    margin-bottom: 15px;
+    font-size: 44px;
+    line-height: 48px;
+    /* font-weight: bold; */
+}
+
+.description_content{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.button_small{
+margin-top: 25px;
+padding: 12px 16px;
+color: whiteColor;
+text-decoration: none;
+font-weight: 600;
+line-height: 100%;
+background: rgba(0,0,0,0.4) !important;
+border: none;
+font-size: 18px;
+display: inline-block;
+border-radius: 4px;
+z-index: 10;
+color: inherit;
+-webkit-transition: background-color .15s ease-out;
+-moz-transition: background-color .15s ease-out;
+-o-transition: background-color .15s ease-out;
+transition: background-color .15s ease-out;
+}

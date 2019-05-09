@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crictics - IPL</title>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/ipl_css.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+	<meta name = "viewport" content = "width=device-width , initial-scale = 1">
+
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,600,800" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+</head>
+<style>
+
+.spacing_free{
+	box-sizing: border-box;
+    border-top-width: 6px;
+    padding-bottom: 0px;
+    border-bottom-width: 6px;
+    padding-top: 0px;
+	background-color: white;
+}
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-mg navbar-dark bg-dark navbar-expand-lg fixed-top">
+    		<!-- Wrapping elements of navbar in container -->
+    			<!-- <div class = "container"> -->
+    				<!-- Brand Icon and Link -->
+    				<a class="navbar-brand marginLeftNav" href="home.html">
+
+    				</a>
+
+    				<!-- When size reduces to mobile size, collapse elements under button -->
+    				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    					<span class="navbar-toggler-icon"></span>
+    				</button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto1">
+                            <li class = "nav-item marginLeftNav"><a href=".." class = "whiteColor nav-link"><i class="fa fa-home"></i>   Crictics</a></li>
+      					</ul>
+    					<ul class="nav navbar-nav ml-auto">
+    						<!-- Elements of Nav bar on the right of screen -->
+                            <li class = "nav-item marginRightNav"><a href="" class = "whiteColor nav-link"><i class="fa fa-user"></i>   Contact Us</a></li>
+    						<li class = "nav-item marginRightNav"><a href="" class = "whiteColor nav-link"><i class="fa fa-users"></i>   About Us</a></li>
+      					</ul>
+      				</div>
+      			<!-- </div> -->
+    	</nav>
+
+        <!-- <div>
+
+        </div> -->
+
+
+
+<div style="font-size:30px" align="center">
+  <!-- <h1 style="font-family:courier"align="center";>WELCOME to CRICTICS-IPL </h1> -->
+
+<div class="spacing_free" >
+	<section class = "hero_section class_ipl">
+	 <div class="hero_content">
+		   <div class="content_of_section">
+			   <div class="writing_content">
+				   <!-- IPL -->
+			   </div>
+		   </div>
+	   <div class="description_content">
+
+	   </div>
+	   </div>
+   <div class="image_container">
+	   <img src="../../../media/IPL.png" alt="IPL">
+   </div>
+
+	</section>
+</div>
+
+
+<section id="bowler_vs_batsman" class = "hero_section class_bowler_vs_batsman">
+	<div class="hero_content">
+		<div class="content_of_section">
+			<div class="writing_content">
+				Bowler vs Batsman
+			</div>
+			<div class="description_content">
+				Find out how any batsman matches up against any bowler !
+			</div>
+		</div>
+	</div>
+
+	<div class="button_class">
+		<a class="button_small" style="text-decoration: none; color: #ffffff !important;" href="bowler_vs_batsman">Click to find out</a>
+	</div>
+	<div class="image_container">
+
+	</div>
+</section>
+
+<!-- <br padding: 6px;> -->
+
+<section class = "hero_section class_most_successful">
+	<div class="hero_content">
+		<div class="content_of_section">
+			<div class="writing_content">
+				Most successful IPL team
+			</div>
+			<div class="description_content">
+				Find out the most successful IPL team across all 9 seasons
+			</div>
+		</div>
+	</div>
+
+	<div class="button_class">
+		<a class="button_small" style="text-decoration: none; color: #ffffff !important;" href="most_successfulteam">Click to find out</a>
+	</div>
+	<div class="image_container">
+		<img src="../../../media/ipl_teams_picture.png" alt="ipl_teams_picture"  width=50%>
+	</div>
+</section>
+
+<section class = "hero_section orange_class" style="background-color: #262740" >
+	<div class="hero_content">
+		<div class="content_of_section">
+			<div class="writing_content">
+				Purple Cap
+			</div>
+			<div class="description_content">
+				Find out the highest wicket taker in each season
+			</div>
+		</div>
+	</div>
+
+	<div class="button_class">
+		<a class="button_small" style="text-decoration: none; color: #ffffff !important;" href="purple_cap">Click to find out</a>
+	</div>
+	<div class="image_container">
+		<img src="../../../media/Bowler.gif" alt="Bowler" height=400 width=300>
+	</div>
+</section>
+
+<section class = "hero_section orange_class">
+	<div class="hero_content">
+		<div class="content_of_section">
+			<div class="writing_content">
+				Orange Cap
+			</div>
+			<div class="description_content">
+				Find out the highest run getter in each season
+			</div>
+		</div>
+	</div>
+
+	<div class="button_class">
+		<a class="button_small" style="text-decoration: none; color: #ffffff !important;" href="orange_cap">Click to find out</a>
+	</div>
+
+	<div class="image_container">
+  		<img src="../../../media/batsman_transparent.png" alt="batsman_transparent">
+	</div>
+</section>
+
+<section class = "hero_section result_prediction">
+	<div class="hero_content">
+		<div class="content_of_section">
+			<div class="writing_content">
+				Result Prediction
+			</div>
+			<div class="description_content">
+				Want to know who will win the next match
+			</div>
+		</div>
+	</div>
+
+	<div class="button_class">
+		<a class="button_small" style="text-decoration: none; color: #ffffff !important;" href="result_prediction">Click to find out</a>
+	</div>
+	<div class="image_container">
+
+	</div>
+</section>
+
+
+<section class = "hero_section toss_section" style="background-color: #C39BD3">
+	<div class="hero_content">
+		<div class="content_of_section">
+			<div class="writing_content">
+				Toss
+			</div>
+			<div class="description_content">
+				Toss decisions by season and venue
+			</div>
+		</div>
+	</div>
+
+	<div class="button_class">
+		<a class="button_small" style="text-decoration: none; color: #ffffff !important;" href="toss">Click to find out</a>
+	</div>
+	<div class="image_container">
+
+	</div>
+</section>
+
+</body>
+</html>

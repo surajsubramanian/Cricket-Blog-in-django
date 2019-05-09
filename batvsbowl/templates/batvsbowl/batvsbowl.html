@@ -1,0 +1,10 @@
+<form action="" method="get">
+    <label for="Batsman_name">Batsman name: </label>
+    <input id="Batsman_name" type="text" name="Batsman_name" value="{{ batsmen }}">
+
+    <label for="Bowler_name">Bowler name: </label>
+    <input id="Bowler_name" type="text" name="Bowler_name" value="{{ bowlers }}"><small class="text-muted">
+     <a class="ml-3" href="{% url 'results' %}" >Results</a>
+    </small>
+
+</form>
