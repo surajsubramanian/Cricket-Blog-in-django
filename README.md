@@ -33,4 +33,5 @@ The project requires installation of Django ( preferrably in a virtual environme
 <img src="./images/updatePost.png">
 
 ## References 
-I did this project by watching CoreyMS's youtube playlist on django, so should you, it's really wonderful for learning Django ! You can also use the official django documentation
+I did this project by watching CoreyMS's youtube playlist on django, so should you ! 
+Also referred the Official Django Documentation
