@@ -12,5 +12,25 @@ I have changed the database connections from the default sqlite database to Post
 
 The project requires installation of Django ( preferrably in a virtual environment ) and PostgreSQL inside which you need to export the CSV files in Kaggle ( I used Postico ).
 
+## Overview of project
+
+### This is what the home page looks like !
+
+<img src="./images/home.png">
+
+### Users can register and login
+
+<img src="./images/register.png">
+<img src="./images/login.png">
+
+### Users can create profiles and update them
+
+<img src="./images/profile.png">
+
+### Users can post content and update them
+
+<img src="./images/post.png">
+<img src="./images/updatePost.png">
+
 ## References 
 I did this project by watching CoreyMS's youtube playlist on django, so should you, it's really wonderful for learning Django ! You can also use the official django documentation
