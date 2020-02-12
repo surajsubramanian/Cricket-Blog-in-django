@@ -13,4 +13,4 @@ I have changed the database connections from the default sqlite database to Post
 The project requires installation of Django ( preferrably in a virtual environment ) and PostgreSQL inside which you need to export the CSV files in Kaggle ( I used Postico ).
 
 ## References 
-You can refer CoreyMS's youtube playlist on django and the official django documentation ( extremely useful resources )
+I did this project by watching CoreyMS's youtube playlist on django, so should you, it's really wonderful for learning Django ! You can  the official django documentation
