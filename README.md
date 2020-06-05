@@ -1,6 +1,8 @@
 # Cricket-Blog-in-django
 Developed a Cricket Blog and Polling app. Also currently creating an IPL page in which i need to include some basic data analysis programs i have written in python. Implemented the website by watching CoreyMS's Youtube Lectures on Django.
 
+Also performed analysis of IPL data using Machine Learning which is included in another repository [IPL Data Analysis](https://github.com/SurajSubramanian/IPL-Data-Analysis)
+
 ## Project Structure
 - blog app contains the home part and post creation, updation and deletion parts of the app.
 - users app contains the login and register modules, profile module and the password reset parts of the app.
